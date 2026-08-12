@@ -27,23 +27,23 @@ export function SysHeader() {
   }, []);
 
   return (
-    <header className="grid grid-cols-1 gap-x-8 gap-y-1 border-b border-border pb-4 text-xs text-ink-faint sm:grid-cols-2">
-      <div className="space-y-1">
+    <header className="grid grid-cols-1 gap-x-8 gap-y-0.5 border-b border-border pb-3 text-xs text-ink-faint sm:gap-y-1 sm:pb-4 sm:grid-cols-2">
+      <div className="space-y-0.5 sm:space-y-1">
         <div>
           whoami&nbsp;&nbsp;: <span className="text-ink-muted">kaushal</span>
         </div>
-        <div>
+        <div className="hidden sm:block">
           host&nbsp;&nbsp;&nbsp;&nbsp;: <span className="text-ink-muted">kaushald4.vercel.app</span>
         </div>
         <div>
           shell&nbsp;&nbsp;&nbsp;: <span className="text-ink-muted">zsh</span>
         </div>
       </div>
-      <div className="space-y-1 sm:text-right">
+      <div className="space-y-0.5 sm:space-y-1 sm:text-right">
         <div>
           uptime&nbsp;: <span className="tabular-nums text-ink-muted">{uptime ?? "…"}</span>
         </div>
-        <div>
+        <div className="hidden sm:block">
           commits: <span className="text-ink-muted">{PROFILE.githubStats.contributionsThisYear}/yr</span>
         </div>
         <div>

@@ -17,17 +17,22 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[number] }) {
         </span>
       </div>
       <p className="mt-1.5 text-sm leading-relaxed text-ink-faint">{project.description}</p>
-      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
-        <a href={project.href} target="_blank" rel="noreferrer noopener" className="text-ink-muted transition-colors hover:text-accent">
+      <div className="-my-1 mt-1 flex flex-wrap gap-x-4 text-xs">
+        <a href={project.href} target="_blank" rel="noreferrer noopener" className="inline-block py-2 text-ink-muted transition-colors hover:text-accent sm:py-1">
           [code]
         </a>
         {project.liveHref && (
-          <a href={project.liveHref} target="_blank" rel="noreferrer noopener" className="text-ink-muted transition-colors hover:text-accent">
+          <a href={project.liveHref} target="_blank" rel="noreferrer noopener" className="inline-block py-2 text-ink-muted transition-colors hover:text-accent sm:py-1">
             [live]
           </a>
         )}
         {project.extraHref && (
-          <a href={project.extraHref.href} target="_blank" rel="noreferrer noopener" className="text-ink-muted transition-colors hover:text-accent">
+          <a
+            href={project.extraHref.href}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-block py-2 text-ink-muted transition-colors hover:text-accent sm:py-1"
+          >
             [{project.extraHref.label.toLowerCase()}]
           </a>
         )}

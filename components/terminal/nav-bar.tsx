@@ -67,7 +67,7 @@ export function NavBar({
       <p className="mt-3 hidden text-[11px] text-ink-faint sm:block">
         SELECT [ ←→ + Enter, or click ] · SCROLL [ ↑↓ ] · type &lsquo;help&rsquo; for commands
       </p>
-      <nav className="mt-2 flex flex-wrap gap-x-1 gap-y-1.5 text-[11px] sm:text-xs">
+      <nav className="mt-2 flex flex-wrap gap-x-1 gap-y-2 text-[11px] sm:text-xs">
         {NAV_ITEMS.map((item, i) => {
           const focused = i === focusIndex;
           const active = item.id === view;
@@ -76,7 +76,7 @@ export function NavBar({
               key={item.id}
               type="button"
               onClick={() => onNavClick(item.id)}
-              className={`shrink-0 rounded px-1.5 py-1 transition-colors sm:px-2 ${
+              className={`shrink-0 rounded px-2 py-2 transition-colors sm:px-2 sm:py-1 ${
                 focused ? "bg-accent text-bg" : active ? "text-accent" : "text-ink-faint hover:text-ink-muted"
               }`}
             >

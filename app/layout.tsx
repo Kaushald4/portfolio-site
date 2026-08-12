@@ -1,10 +1,20 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const mono = JetBrains_Mono({ variable: "--font-mono-geist", subsets: ["latin"], display: "swap" });
 
 const SITE_URL = "https://kaushald4.netlify.app";
+
+// viewportFit: "cover" lets the fullscreen mobile layout draw edge-to-edge under
+// the notch/home-indicator, so env(safe-area-inset-*) reports real values instead
+// of 0 — required for the safe-area padding on TitleBar/NavBar to do anything.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#08090b",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

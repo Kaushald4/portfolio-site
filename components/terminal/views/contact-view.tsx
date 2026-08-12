@@ -15,10 +15,15 @@ export function ContactView() {
 
       <dl className="space-y-2.5 text-sm">
         {LINKS.map((l) => (
-          <div key={l.label} className="flex flex-wrap gap-3">
-            <dt className="w-24 shrink-0 text-ink-faint">{l.label}</dt>
-            <dd>
-              <a href={l.href} target={l.href.startsWith("mailto:") ? undefined : "_blank"} rel="noreferrer noopener" className="text-ink-muted transition-colors hover:text-accent">
+          <div key={l.label} className="flex gap-3">
+            <dt className="w-20 shrink-0 text-ink-faint sm:w-24">{l.label}</dt>
+            <dd className="min-w-0 flex-1">
+              <a
+                href={l.href}
+                target={l.href.startsWith("mailto:") ? undefined : "_blank"}
+                rel="noreferrer noopener"
+                className="break-all text-ink-muted transition-colors hover:text-accent"
+              >
                 {l.value}
               </a>
             </dd>

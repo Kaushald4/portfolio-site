@@ -148,7 +148,7 @@ export function TerminalShell() {
 
   return (
     <div className="flex h-dvh items-center justify-center bg-bg p-0 sm:p-5 md:p-8">
-      <div className="flex h-full w-full max-w-6xl flex-col overflow-hidden border-border-strong bg-surface sm:h-[min(880px,100%)] sm:rounded-xl sm:border sm:shadow-2xl sm:shadow-black/60">
+      <div className="pt-safe pb-safe flex h-full w-full max-w-6xl flex-col overflow-hidden border-border-strong bg-surface sm:h-[min(880px,100%)] sm:rounded-xl sm:border sm:shadow-2xl sm:shadow-black/60">
         <TitleBar onAction={handleDotAction} theme={theme} onToggleTheme={toggleTheme} />
 
         <div className="flex min-h-0 flex-1 flex-col px-5 sm:px-8">
