@@ -33,7 +33,7 @@ export function SysHeader() {
           whoami&nbsp;&nbsp;: <span className="text-ink-muted">kaushal</span>
         </div>
         <div>
-          host&nbsp;&nbsp;&nbsp;&nbsp;: <span className="text-ink-muted">kaushal.dev</span>
+          host&nbsp;&nbsp;&nbsp;&nbsp;: <span className="text-ink-muted">kaushald4.vercel.app</span>
         </div>
         <div>
           shell&nbsp;&nbsp;&nbsp;: <span className="text-ink-muted">zsh</span>

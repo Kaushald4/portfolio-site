@@ -2,7 +2,7 @@ import { PROFILE } from "@/lib/data";
 import { PromptLine } from "../prompt-line";
 
 const BOOT_LOG = [
-  { label: "Loading profile", value: "kaushal.dev" },
+  { label: "Loading profile", value: "kaushald4.vercel.app" },
   { label: "Mounting /projects", value: "5 entries" },
   { label: "Establishing uplink", value: "github.com/Kaushald4" },
   { label: "System ready", value: "" },
