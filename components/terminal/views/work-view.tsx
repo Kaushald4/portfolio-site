@@ -41,7 +41,7 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[number] }) {
   );
 }
 
-/** Rendered as a restricted file entry rather than a normal project card — the private case-study deserves to feel different from the public repos around it, not just badged "private" on an identical card. */
+/** Rendered as a restricted file entry rather than a normal project card - the private case-study deserves to feel different from the public repos around it, not just badged "private" on an identical card. */
 function RestrictedRow() {
   const [open, setOpen] = useState(false);
   return (
@@ -53,7 +53,7 @@ function RestrictedRow() {
           </span>
           <span className="text-xs text-ink-faint">-rwx------</span>
         </div>
-        <p className="mt-1.5 text-sm text-ink-faint">{open ? "cat: showing restricted contents…" : "permission denied — click to request access"}</p>
+        <p className="mt-1.5 text-sm text-ink-faint">{open ? "cat: showing restricted contents…" : "permission denied - click to request access"}</p>
       </button>
 
       {open && (
@@ -85,7 +85,7 @@ export function WorkView() {
   return (
     <div>
       <PromptLine command="ls -la ~/projects" />
-      <p className="mb-4 text-xs text-ink-faint">{PROJECTS.length + 1} entries — click a row to expand</p>
+      <p className="mb-4 text-xs text-ink-faint">{PROJECTS.length + 1} entries - click a row to expand</p>
       <div>
         {PROJECTS.map((p) => (
           <ProjectRow key={p.name} project={p} />

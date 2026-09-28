@@ -25,7 +25,7 @@ const HELP_TEXT = "commands: home · work · about · skills · contact";
 
 /**
  * A fake shell, not a real one: view switching + a tiny command parser, all
- * client state. No routing needed — this is the entire page. Left/Right move
+ * client state. No routing needed - this is the entire page. Left/Right move
  * the keyboard menu focus (independent of the currently open view, so you
  * can browse before committing with Enter); Up/Down scroll the content pane
  * instead, since scrolling now happens inside the terminal, not the page.
@@ -37,7 +37,7 @@ export function TerminalShell() {
   const [feedback, setFeedback] = useState<string | null>(null);
   const [showPhoto, setShowPhoto] = useState(false);
   // Lazy initializer (not an effect) so the very first client render already
-  // matches a returning visitor's saved preference — reading localStorage in
+  // matches a returning visitor's saved preference - reading localStorage in
   // an effect would mean setState-during-effect, plus a one-frame flash back
   // to dark before the stored theme kicks in.
   const [theme, setTheme] = useState<Theme>(() => {
@@ -87,7 +87,7 @@ export function TerminalShell() {
       navigate(target);
       return;
     }
-    setFeedback(`command not found: ${cmd} — type 'help'`);
+    setFeedback(`command not found: ${cmd} - type 'help'`);
   }
 
   function handleDotAction(action: DotAction) {
@@ -111,7 +111,7 @@ export function TerminalShell() {
 
   useEffect(() => {
     // The idle caret blinks from the moment the page loads, implying you can just
-    // start typing — true on a real terminal, so the input should actually be
+    // start typing - true on a real terminal, so the input should actually be
     // focused already. Skipped on touch devices, where autofocus would pop the
     // on-screen keyboard unprompted.
     if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {

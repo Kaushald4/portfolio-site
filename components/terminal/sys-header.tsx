@@ -12,7 +12,7 @@ function formatUptime(ms: number): string {
   return `${days}d ${String(hours).padStart(2, "0")}h ${String(minutes).padStart(2, "0")}m ${String(seconds).padStart(2, "0")}s`;
 }
 
-/** Real uptime, not decorative — counts from the actual GitHub account creation date. Ticks live, client-only to avoid a server/client render mismatch on the current second. */
+/** Real uptime, not decorative - counts from the actual GitHub account creation date. Ticks live, client-only to avoid a server/client render mismatch on the current second. */
 export function SysHeader() {
   const [uptime, setUptime] = useState<string | null>(null);
 

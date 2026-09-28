@@ -33,7 +33,7 @@ export function TitleBar({ onAction, theme, onToggleTheme }: TitleBarProps) {
           </button>
         ))}
       </div>
-      <p className="pointer-events-none absolute inset-x-0 text-center font-mono text-xs text-ink-faint">kaushal@dev — zsh — 88×24</p>
+      <p className="pointer-events-none absolute inset-x-0 text-center font-mono text-xs text-ink-faint">kaushal@dev - zsh - 88×24</p>
       <button
         type="button"
         aria-label={theme === "dark" ? "switch to light theme" : "switch to dark theme"}

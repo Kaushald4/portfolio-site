@@ -113,7 +113,7 @@
   }
 
   /* Only non-zero on notched/rounded-corner phones in fullscreen (viewport-fit=cover)
-     — 0px everywhere else, so this is safe to apply unconditionally. */
+     - 0px everywhere else, so this is safe to apply unconditionally. */
   .pt-safe {
     padding-top: env(safe-area-inset-top);
   }

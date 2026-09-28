@@ -19,7 +19,7 @@ export function PhotoOverlay({ onClose }: { onClose: () => void }) {
         <div className="overflow-hidden rounded border border-border-strong">
           <Image src="/kaushal.jpg" alt="Kaushal Mehta" width={640} height={638} className="w-full object-cover grayscale-[10%]" />
         </div>
-        <p className="mt-2 text-[11px] text-ink-faint">kaushal.jpg — press Esc or click anywhere to close</p>
+        <p className="mt-2 text-[11px] text-ink-faint">kaushal.jpg - press Esc or click anywhere to close</p>
       </div>
     </div>
   );

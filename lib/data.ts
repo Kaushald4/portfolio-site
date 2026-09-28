@@ -14,7 +14,7 @@ export const PROFILE = {
     followers: 38,
     contributionsThisYear: 364,
   },
-  /** GitHub account creation date — used as the "uptime" epoch for the terminal HUD's live counter. Real, not decorative. */
+  /** GitHub account creation date - used as the "uptime" epoch for the terminal HUD's live counter. Real, not decorative. */
   bootEpoch: "2017-04-08T04:38:56Z",
 };
 
@@ -86,6 +86,15 @@ export const PROJECTS: Project[] = [
     modified: "2026-07",
     href: "https://github.com/Kaushald4/riscv64-emulator",
     featured: true,
+  },
+  {
+    name: "pulse",
+    description:
+      "A desktop intelligence desk for keeping up with a field: it tracks repositories, papers, products and discussions across your sources, ranks what actually matters, and writes a daily briefing - with the items each brief was written from attached to it, collapsible at the foot of the brief.",
+    stack: ["Tauri v2", "Next.js", "React", "TypeScript", "Rust", "SQLite"],
+    lang: "TypeScript",
+    modified: "2026-09",
+    href: "https://github.com/Kaushald4/Pulse",
   },
   {
     name: "repost/",
